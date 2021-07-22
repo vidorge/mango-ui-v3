@@ -29,10 +29,11 @@ const TopBar = () => {
                 className={`hidden md:flex md:items-center md:space-x-6 md:ml-4`}
               >
                 <MenuItem href="/spot/BTC">Trade</MenuItem>
+                <MenuItem href="/markets">Markets</MenuItem>
                 <MenuItem href="/account">Account</MenuItem>
                 <MenuItem href="/borrow">Borrow</MenuItem>
                 {/* <MenuItem href="/alerts">Alerts</MenuItem> */}
-                <MenuItem href="/stats">Stats</MenuItem> 
+                <MenuItem href="/stats">Stats</MenuItem>
                 <MenuItem href="https://docs.mango.markets/">Learn</MenuItem>
                 {/* TODO: change v2 link before mainnet */}
                 <NavDropMenu

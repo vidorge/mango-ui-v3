@@ -146,7 +146,9 @@ const MarketHeader = () => {
               )}
             </div>
           </div>
-          <DayHighLow />
+          <div className="pr-6">
+            <DayHighLow low={oraclePrice / 1.05} high={oraclePrice * 1.05} />
+          </div>
           {selectedMarketName.includes('PERP') ? (
             <>
               <div className="pr-6">
