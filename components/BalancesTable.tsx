@@ -188,9 +188,7 @@ const BalancesTable = () => {
                         >
                           {+balance.net === 0
                             ? 0
-                            : balance.marginDeposits.toFixed(
-                                tokenConfig.decimals
-                              )}
+                            : balance.net.toFixed(tokenConfig.decimals)}
                         </Td>
                       </Tr>
                     )
