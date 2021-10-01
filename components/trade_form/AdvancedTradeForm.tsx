@@ -435,6 +435,13 @@ export default function AdvancedTradeForm({
       return accPrice / accSize
     }
 
+    let midPrice = markPrice
+    try {
+      midPrice = (orderbook.asks[0][0] + orderbook.bids[0][0]) / 2
+    } catch (e) {
+      console.error(e)
+    }
+
     const estimatedSize =
       perpAccount && reduceOnly
         ? Math.abs(
@@ -443,8 +450,8 @@ export default function AdvancedTradeForm({
         : baseSize
     estimatedPrice = estimateMarketPrice(orderbook, estimatedSize, side)
     const slippageAbs =
-      estimatedSize > 0 ? Math.abs(estimatedPrice - markPrice) : 0
-    const slippageRel = slippageAbs / markPrice
+      estimatedSize > 0 ? Math.abs(estimatedPrice - midPrice) : 0
+    const slippageRel = slippageAbs / midPrice
 
     const takerFeeRel = takerFee
     const takerFeeAbs = takerFeeRel * estimatedPrice
