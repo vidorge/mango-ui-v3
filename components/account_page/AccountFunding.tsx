@@ -55,7 +55,7 @@ const AccountFunding = () => {
   return (
     <>
       <div className="pb-3.5 text-th-fgd-1 text-base">
-        Total Funding Earned/Paid
+        Total Funding Earned/Paid (paused for upgrades since Oct. 11)
       </div>
       {mangoAccount ? (
         <div>

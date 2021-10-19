@@ -64,7 +64,7 @@ const AccountInterest = () => {
   return (
     <>
       <div className="pb-3.5 text-th-fgd-1 text-base">
-        Total Interest Earned/Paid
+        Total Interest Earned/Paid (paused for upgrades since Oct. 11)
       </div>
       {mangoAccount ? (
         <div>
