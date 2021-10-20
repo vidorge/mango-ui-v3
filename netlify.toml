@@ -1,6 +1,7 @@
 [build]
-command = "npm run build"
+command = "yarn build"
 publish = "out"
 
-[[plugins]]
-package = "@netlify/plugin-nextjs"
+[functions]
+node_bundler = "esbuild"
+included_files = ["public/locales/en/*.json", "next-i18next.config.js"]
