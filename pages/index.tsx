@@ -12,11 +12,12 @@ import {
   GRID_LAYOUT_KEY,
 } from '../components/TradePageGrid'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import nextI18nextConfig from '../next-i18next.config'
 
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common'], nextI18nextConfig)),
       // Will be passed to the page component as props
     },
   }
