@@ -4,4 +4,4 @@ publish = "out"
 
 [functions]
 node_bundler = "esbuild"
-included_files = ["public/locales/en/*.json", "next-i18next.config.js"]
+included_files = ["public/locales/*/*.json", "next-i18next.config.js"]
