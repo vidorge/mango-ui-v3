@@ -472,7 +472,7 @@ const TVChartContainer = () => {
               orderType: orderTypeTranslated,
               orderSide: orderSideTranslated,
               triggerCondition: triggerConditionTranslated,
-              triggerPrice,
+              triggerPrice: usdFormatter(triggerPrice),
             })
           )
         } else {
@@ -482,7 +482,7 @@ const TVChartContainer = () => {
               orderType: orderTypeTranslated,
               orderSide: orderSideTranslated,
               triggerCondition: triggerConditionTranslated,
-              triggerPrice,
+              triggerPrice: usdFormatter(triggerPrice),
             })
           )
         }
@@ -494,7 +494,7 @@ const TVChartContainer = () => {
               orderType: orderTypeTranslated,
               orderSide: orderSideTranslated,
               triggerCondition: triggerConditionTranslated,
-              triggerPrice,
+              triggerPrice: usdFormatter(triggerPrice),
             })
           )
         } else {
@@ -504,7 +504,7 @@ const TVChartContainer = () => {
               orderType: orderTypeTranslated,
               orderSide: orderSideTranslated,
               triggerCondition: triggerConditionTranslated,
-              triggerPrice,
+              triggerPrice: usdFormatter(triggerPrice),
             })
           )
         }
